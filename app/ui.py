@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import pandas as pd
 
-API_URL = "https://shl-recommender-backend-3gk2.onrender.com" 
+API_URL = "https://shl-recommender-backend-3gk2.onrender.com/recommend_full" 
 
 def main():
     st.set_page_config(page_title="SHL Assessment Recommender", layout="wide")

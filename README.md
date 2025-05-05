@@ -151,15 +151,16 @@ shl-recommender/
 │   ├── api.py
 │   ├── ui.py
 ├── data/
-│   ├── assessment.csv
-│   ├── vector.index
-│   ├── vector_texts.pkl
-├── notebooks/
-│   ├── assessment.csv
+│   ├── df_bm25_tokenized.pkl
+│   ├── df_clean.pkl
+│   ├── faiss_index.bin
+├── notebook/
+│   ├── shl-recommendation-system.ipynb
 ├── scripts/
 │   ├── scrape.py
-│   ├── vector_texts.pkl
-├── main.py
+│   ├── TestSet.py
+├── streamlit_app.py
+├── nltk_data
 ```
 
 ---
