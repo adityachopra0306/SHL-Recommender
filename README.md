@@ -1,8 +1,10 @@
 # SHL Assessment Recommender System
 
 This project implements an intelligent recommendation system that suggests the most relevant SHL assessments based on a natural language job description or hiring requirement. It combines modern Information Retrieval (IR) techniques—including semantic embeddings, BM25 lexical search, and metadata-based filtering—into a hybrid pipeline. The goal is to retrieve and rank SHL assessments in a context-aware, efficient, and scalable manner.
-This achieves an Recall@10 of 0.3, and an MAP@10 of 0.2, which might however, be lowered due to computational constraints in the web app.
+This achieves an **Recall@10 of 0.3, and an MAP@10 of 0.2**, which is competitive given the zero-shot pre-trained model.
 
+The link to the end-to-end webpage can be found below:
+[Website URL](https://assessment-recommender-shl.streamlit.app/)
 ---
 
 ## Key Features
@@ -41,10 +43,10 @@ These results were achieved without any supervised training. Future improvements
   - `data-entity-id`
   - `Assessment Name`
   - `Relative URL`
-  - `Remote Testing`
-  - `Adaptive/IRT`
+  - `Remote Testing Support`
+  - `Adaptive/IRT Support`
   - `Test Type`
-  - `Assessment Length`
+  - `Assessment Length/Duration`
 
 - Data was cleaned, deduplicated, enriched with additional metadata, and stored as CSV. Within a kaggle environment, it was then cleaned and processed and the resulting dataframe saved in `/scripts/df_clean.pkl`.
 
@@ -52,7 +54,7 @@ These results were achieved without any supervised training. Future improvements
 
 ## Embedding & Indexing
 
-- Sentence embeddings generated using **SBERT** (`all-MiniLM-L6-v2`).
+- Sentence embeddings generated using **SBERT** (`all-mpnet-base-v2`).
 - Dense vector index created using **FAISS** for semantic similarity.
 - Gemini used to process queries and extract key constraints (e.g., duration, test type).
 - Metadata filtering applied after retrieval.
@@ -60,6 +62,8 @@ These results were achieved without any supervised training. Future improvements
 ---
 
 ## API Endpoints
+
+The backend can be accessed through the base url: [https://adityachopra0306-shl-recommender.hf.space/](https://adityachopra0306-shl-recommender.hf.space/). HuggingFace Space has been used for hosting.
 
 The backend is served via FastAPI with the following endpoints:
 
