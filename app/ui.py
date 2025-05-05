@@ -52,7 +52,7 @@ st.markdown(
     "The model achieves **0.30 Recall@10** and **0.20 MAP@10** on the provided test dataset, which is limited by the small test dataset, and the lack of any training/fine-tuning of the model. The model is shown to perform well on technical queries, but has high amount of misses on non-technical queries, indicating lack of depth in semantic understanding of the text, which could be improved using ensembling, fine-tuning or even training a classifier model, though effects on latency remain to be observed."
 )
 st.markdown(
-    "Further analysis, as well as the source code can be found in the [GitHub Repository](https://github.com/adityachopra0306) for this project."
+    "Further analysis, as well as the source code can be found in the [GitHub Repository](https://github.com/adityachopra0306/SHL-Recommender) for this project."
 )
 st.markdown("---")
 st.markdown("**Made by [Aditya Chopra](https://www.linkedin.com/in/aditya-chopra-8047582ab/) | [GitHub](https://github.com/adityachopra0306)**")
