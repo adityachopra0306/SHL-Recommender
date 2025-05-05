@@ -11,3 +11,5 @@ I continued iterating by introducing filtering based on duration and test type m
 I also tested a two-stage hybrid pipeline where BM25 fetched candidates and SBERT re-ranked them semantically, which pushed the performance further.
 
 Ultimately, these iterative enhancements—semantic embeddings, LLM-assisted parsing, metadata filtering, hybrid ranking—culminated in a model achieving **30% Recall@10** and **21% MAP@10** on the official test set. While there’s still room for improvement through supervised fine-tuning or LLM-based reranking, I’ve built a zero-shot, generalizable, and interpretable solution that performs competitively without any training data and minimal latency.
+
+This iterative development of ML tech for this task can be observed in the [**Jupyter Notebook**](shl-recommendation-system.ipynb) provided.
