@@ -13,6 +13,7 @@ import google.generativeai as genai
 from dotenv import load_dotenv
 import functools
 
+nltk.data.path.append("nltk_data")
 load_dotenv()
 
 DF_PATH = os.getenv("DF_PATH", "data/df_clean.pkl")
