@@ -23,6 +23,7 @@ The link to the end-to-end webpage can be found below:
 
 ![Architecture](graph.png)
 
+[My Approach](notebook/Approach.md) and the [Development process](notebook/shl-recommendation-system.ipynb) can be found in the given links.
 ---
 
 ## Evaluation
@@ -30,7 +31,7 @@ The link to the end-to-end webpage can be found below:
 The system was evaluated on SHL's provided test set:
 
 - **Recall@10:** 0.30
-- **MAP@10:** 0.20
+- **MAP@10:** 0.21
 
 These results were achieved without any supervised training. Future improvements could involve classifier ensembling or reranking using domain-specific fine-tuning.
 
