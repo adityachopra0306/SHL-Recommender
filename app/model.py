@@ -19,7 +19,7 @@ load_dotenv()
 DF_PATH = os.getenv("DF_PATH", "data/df_clean.pkl")
 BM25_PICKLE_PATH = os.getenv("BM25_PICKLE_PATH", "data/df_bm25_tokenized.pkl")
 FAISS_INDEX_PATH = os.getenv("FAISS_INDEX_PATH", "data/faiss_index.bin")
-SBERT_MODEL_NAME = os.getenv("SBERT_MODEL_NAME", "all-mpnet-base-v2")
+SBERT_MODEL_NAME = "all-MiniLM-L6-v2"
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 
 PROMPT_TEMPLATE = """
@@ -46,20 +46,6 @@ Only return the JSON. No explanation or extra text.
 QUERY:
 {query}
 """
-
-''' TOO MUCH RAM USAGE, now performed in start.sh
-def ensure_nltk_resources():
-    try:
-        nltk.data.find("tokenizers/punkt")
-    except LookupError:
-        nltk.download("punkt")
-    try:
-        nltk.data.find("corpora/stopwords")
-    except LookupError:
-        nltk.download("stopwords")
-
-ensure_nltk_resources()
-'''
 
 STOP_WORDS = set(stopwords.words('english'))
 
@@ -177,3 +163,4 @@ def get_recommendations(job_text):
     sm_df = filter_by_test_type(sm_df, parsed_query['test_types'])
 
     return rrf_fusion(bm_df, sm_df)
+
