@@ -7,7 +7,7 @@ API_URL = "https://adityachopra0306-shl-recommender.hf.space/recommend_full"
 def main():
     st.set_page_config(page_title="SHL Assessment Recommender", layout="wide")
 
-    st.title("🔍 SHL Assessment Recommendation Engine")
+    st.title("SHL Assessment Recommendation Engine")
     st.markdown("Enter a job description or query below, and get personalized SHL assessment recommendations.")
 
     query = st.text_area("Job Description or Query", height=200)
