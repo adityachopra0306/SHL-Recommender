@@ -16,10 +16,10 @@ import functools
 nltk.data.path.append("nltk_data")
 load_dotenv()
 
-DF_PATH = os.getenv("DF_PATH", "data/df_clean.pkl")
-BM25_PICKLE_PATH = os.getenv("BM25_PICKLE_PATH", "data/df_bm25_tokenized.pkl")
-FAISS_INDEX_PATH = os.getenv("FAISS_INDEX_PATH", "data/faiss_index.bin")
-SBERT_MODEL_NAME = "all-MiniLM-L6-v2"
+DF_PATH = "data/df_clean.pkl"
+BM25_PICKLE_PATH = "data/df_bm25_tokenized.pkl"
+FAISS_INDEX_PATH = "data/faiss_index.bin"
+SBERT_MODEL_NAME = "all-mpnet-base-v2"
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 
 PROMPT_TEMPLATE = """

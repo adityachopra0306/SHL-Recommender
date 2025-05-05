@@ -1,10 +1,11 @@
 # SHL Assessment Recommender System
 
 This project implements an intelligent recommendation system that suggests the most relevant SHL assessments based on a natural language job description or hiring requirement. It combines modern Information Retrieval (IR) techniques—including semantic embeddings, BM25 lexical search, and metadata-based filtering—into a hybrid pipeline. The goal is to retrieve and rank SHL assessments in a context-aware, efficient, and scalable manner.
+This achieves an Recall@10 of 0.3, and an MAP@10 of 0.2, which might however, be lowered due to computational constraints in the web app.
 
 ---
 
-## 🔍 Key Features
+## Key Features
 
 - **Hybrid Retrieval Pipeline:** Combines BM25 (lexical) and SBERT (semantic) search.
 - **RAG-Augmented Processing:** Integrates Google Gemini API for advanced query parsing.
@@ -18,15 +19,7 @@ This project implements an intelligent recommendation system that suggests the m
 
 ## System Architecture
 
-```mermaid
-graph TD
-    A[User Query] --> B[Gemini-based Parsing]
-    B --> C1[BM25 Lexical Search]
-    B --> C2[SBERT Semantic Search via FAISS]
-    C1 --> D[Fusion & Filtering (RRF + metadata)]
-    C2 --> D
-    D --> E[Top-N Assessment Recommendations]
-```
+![Architecture](graph.png)
 
 ---
 
