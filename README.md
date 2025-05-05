@@ -87,7 +87,7 @@ Content-Type: application/json
 
 ```json
 {
-  "results": [
+  "recommended_assessments": [
     {
       "url": "https://www.shl.com/products/product-catalog/view/net-framework-4-5/",
       "adaptive_support": "yes",
