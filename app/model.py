@@ -46,6 +46,7 @@ QUERY:
 {query}
 """
 
+''' TOO MUCH RAM USAGE, now performed in start.sh
 def ensure_nltk_resources():
     try:
         nltk.data.find("tokenizers/punkt")
@@ -57,6 +58,8 @@ def ensure_nltk_resources():
         nltk.download("stopwords")
 
 ensure_nltk_resources()
+'''
+
 STOP_WORDS = set(stopwords.words('english'))
 
 @functools.lru_cache(maxsize=1)
