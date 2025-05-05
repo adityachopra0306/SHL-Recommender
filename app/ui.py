@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import pandas as pd
 
-API_URL = "http://127.0.0.1:8000/recommend_full"  # Change to Render URL after deployment
+API_URL = "https://shl-recommender-backend-3gk2.onrender.com" 
 
 st.set_page_config(page_title="SHL Assessment Recommender", layout="wide")
 

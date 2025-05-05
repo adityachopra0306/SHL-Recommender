@@ -4,7 +4,7 @@ from typing import List
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 
-from .model import get_recommendations
+from app.model import get_recommendations
 
 app = FastAPI(title="SHL Assessment Recommendation API")
 
