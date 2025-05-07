@@ -39,7 +39,7 @@ These results were achieved without any supervised training. Future improvements
 
 ## Data Processing
 
-- Assessments scraped from: [SHL Product Catalog](https://www.shl.com/solutions/products/product-catalog/)
+- Assessments scraped from: [SHL Product Catalog](https://www.shl.com/solutions/products/product-catalog/) (See [scrape.py](scripts/scrape.py))
 - Extracted Fields:
   - `data-entity-id`
   - `Assessment Name`
