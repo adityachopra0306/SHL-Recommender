@@ -158,11 +158,16 @@ shl-recommender/
 │   ├── faiss_index.bin
 ├── notebook/
 │   ├── shl-recommendation-system.ipynb
+│   ├── Approach.md
 ├── scripts/
 │   ├── scrape.py
 │   ├── TestSet.py
 ├── streamlit_app.py
-├── nltk_data
+├── nltk_data/
+│   ├── ...
+├── graph.png
+├── requirements.txt
+├── README.md
 ```
 
 ---
