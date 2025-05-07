@@ -83,6 +83,10 @@ Content-Type: application/json
 }
 ```
 
+```cmd
+curl -X POST -H "Content-Type: application/json" -d "{\"query\":\"I need a 30 to 40 minute test to evaluate .NET Framework skills for remote hiring.\"}" https://adityachopra0306-shl-recommender.hf.space/recommend
+```
+
 ### Example Response
 
 ```json
