@@ -55,5 +55,9 @@ def main():
     st.markdown(
         "Further analysis, as well as the source code can be found in the [GitHub Repository](https://github.com/adityachopra0306/SHL-Recommender) for this project."
     )
+    st.markdown(
+        "### \nNote:\n"
+        "The back-end is hosted on HF Spaces, thus causing the ~20s latency due to shared CPU and infra limits. Locally, latency is minimal- <1.5s per query."
+    )
     st.markdown("---")
     st.markdown("**Made by [Aditya Chopra](https://www.linkedin.com/in/aditya-chopra-8047582ab/) | [GitHub](https://github.com/adityachopra0306)**")
