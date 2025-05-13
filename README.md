@@ -5,6 +5,9 @@ This achieves an **Recall@10 of 0.3, and an MAP@10 of 0.2**, which is competitiv
 
 The link to the end-to-end webpage can be found below:
 [Website URL](https://assessment-recommender-shl.streamlit.app/)
+
+**Note:**
+Querying the backend takes ~20s due to HF Spaces hosting bottleneck (shared CPU), the system performs with latency <1.5s locally.
 ---
 
 ## Key Features
