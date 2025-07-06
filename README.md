@@ -1,13 +1,20 @@
 # SHL Assessment Recommender System
 
+![status](https://img.shields.io/badge/status-Deployed-green)
+![python](https://img.shields.io/badge/Python-3.10+-blue)
+![framework](https://img.shields.io/badge/Backend-FastAPI-blueviolet)
+![framework](https://img.shields.io/badge/Frontend-Streamlit-orange)
+![nlp](https://img.shields.io/badge/NLP-SBERT-teal)
+![license](https://img.shields.io/badge/license-MIT-brightgreen)
+
 This project implements an intelligent recommendation system that suggests the most relevant SHL assessments based on a natural language job description or hiring requirement. It combines modern Information Retrieval (IR) techniques—including semantic embeddings, BM25 lexical search, and metadata-based filtering—into a hybrid pipeline. The goal is to retrieve and rank SHL assessments in a context-aware, efficient, and scalable manner.
-This achieves an **Recall@10 of 0.3, and an MAP@10 of 0.2**, which is competitive given the zero-shot pre-trained model.
+This achieves a **Recall@10 of 0.3, and an MAP@10 of 0.2**, which is competitive given the zero-shot pre-trained model.
 
 The link to the end-to-end webpage can be found below:
 [Website URL](https://assessment-recommender-shl.streamlit.app/)
 
 **Note:**
-Querying the backend may take **upto 20s** due to HF Spaces hosting bottleneck (shared CPU), the system performs with latency <1.5s locally.
+Querying the backend may take **upto 20s** in extreme cases due to HF Spaces hosting bottleneck (shared CPU), the system performs with latency <1.5s locally.
 
 ---
 
@@ -176,13 +183,15 @@ shl-recommender/
 
 ---
 
-## 📎 License
+### License
 
-This project is intended for educational and evaluation purposes only and is not affiliated with SHL. All product data is publicly accessible via the SHL website.
+This project is licensed under the **MIT License**. See the [LICENSE](./LICENSE) file for details.
+
+> **Disclaimer:** This project is intended for educational and evaluation purposes only. It is **not affiliated with SHL**, and all product data used was obtained from publicly accessible sources on the SHL website.
 
 ---
 
-## 🔗 Links
+## Links
 
 - [SHL Product Catalog](https://www.shl.com/solutions/products/product-catalog/)
 - [Gemini API](https://ai.google.dev/)
