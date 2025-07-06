@@ -7,7 +7,7 @@
 ![nlp](https://img.shields.io/badge/NLP-SBERT-teal)
 ![license](https://img.shields.io/badge/license-MIT-brightgreen)
 
-This project implements an intelligent recommendation system that suggests the most relevant SHL assessments based on a natural language job description or hiring requirement. It combines modern Information Retrieval (IR) techniques—including semantic embeddings, BM25 lexical search, and metadata-based filtering—into a hybrid pipeline. The goal is to retrieve and rank SHL assessments in a context-aware, efficient, and scalable manner.
+This project implements an intelligent recommendation system that suggests the most relevant SHL assessments based on a natural language job description or hiring requirement. It combines modern Information Retrieval (IR) techniques—including semantic embeddings, BM25 lexical search, and metadata-based filtering—into a hybrid pipeline. The goal is to retrieve and rank SHL assessments in a context-aware, efficient, and scalable manner.  
 This achieves a **Recall@10 of 0.3, and an MAP@10 of 0.2**, which is competitive given the zero-shot pre-trained model.
 
 The link to the end-to-end webpage can be found below:
