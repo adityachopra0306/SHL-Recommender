@@ -7,7 +7,8 @@ The link to the end-to-end webpage can be found below:
 [Website URL](https://assessment-recommender-shl.streamlit.app/)
 
 **Note:**
-Querying the backend takes ~20s due to HF Spaces hosting bottleneck (shared CPU), the system performs with latency <1.5s locally.
+Querying the backend may take **upto 20s** due to HF Spaces hosting bottleneck (shared CPU), the system performs with latency <1.5s locally.
+
 ---
 
 ## Key Features
